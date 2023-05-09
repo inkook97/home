@@ -1,0 +1,458 @@
+  * {
+      margin: 0;
+      padding: 0;
+  }
+
+  ul,
+  li {
+      list-style: none;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  #wrap {
+      width: 100%;
+  }
+
+
+  #wrap>div {
+      width: 100%;
+      height: 100vh;
+  }
+
+
+  #wrap>div>div {
+      height: 100vh;
+  }
+
+  #wrap>div:nth-child(3) {
+      width: 100%;
+      height: 100vh;
+  }
+
+
+  #wrap>div>div:nth-child(3) {
+      height: 100vh;
+  }
+
+
+  /* 메인 */
+
+
+  #main {
+      width: 100%;
+      float: left;
+  }
+
+  .in_main {
+      /* width: 1500px; */
+      width: 100%;
+      margin: 0 auto;
+  }
+
+
+  .in_main>.text_h {
+      /* width: 1500px; */
+      width: 50%;
+      margin: 0 auto;
+  }
+
+  .pr {
+      float: right;
+  }
+
+  .bark {
+      float: right;
+  }
+
+  .main_img>img {
+      width: 400px;
+      height: 200px;
+      float: left;
+  }
+
+  #main .header {
+      width: 100%;
+      height: 120px;
+      box-sizing: border-box;
+      position: fixed;
+      z-index: 9999;
+  }
+
+  #main .logo {
+      width: 120px;
+      height: 120px;
+      position: fixed;
+      left: 10%;
+  }
+
+  #main .logo img {
+      padding-top: 20px;
+      box-sizing: border-box;
+  }
+
+
+  #main .nav {
+      position: absolute;
+      left: 70.5%;
+      margin: 0;
+      float: left;
+      display: none;
+      flex-direction: column;
+  }
+
+  #main .nav li {
+      margin-right: 0;
+      text-align: center;
+      display: none;
+      border: 1px solid #000;
+      border-bottom: none;
+      height: 29px;
+  }
+
+  #main .nav li:last-child {
+      border-bottom: 1px solid #000;
+      display: none;
+  }
+
+  #main .nav2 {
+      position: absolute;
+      /* left: 70.5%; */
+      margin: 0;
+      float: left;
+      display: flex;
+      flex-direction: column;
+  }
+
+  #main .nav2 li {
+      margin-right: 0;
+      text-align: center;
+      display: inline-block;
+      border: 1px solid #000;
+      border-bottom: none;
+      height: 29px;
+  }
+
+  #main .nav2 li:last-child {
+      border-bottom: 1px solid #000;
+  }
+
+  #main .nav2 a {
+      color: #fff;
+  }
+
+  #main .nav2 a:hover {
+      color: white;
+  }
+
+  #main .nav2 li:hover {
+      color: white;
+      background-color: #000;
+      transition: 1s;
+  }
+
+  .ham_btn {
+      width: 50px;
+      height: 50px;
+      position: fixed;
+      right: 16.7%;
+      top: 30px;
+      cursor: pointer;
+  }
+
+  .ham_btn>span {
+      display: block;
+      border-bottom: 4px solid #000;
+      padding-bottom: 10px;
+      box-sizing: border-box;
+  }
+
+  #main h2 {
+      float: left;
+      width: 53.3vw;
+      margin: 200px 0 0 0;
+      /* font-size: 50px; */
+      font-size: 4.7vw;
+      text-align: left;
+      padding-right: 0;
+      box-sizing: border-box;
+  }
+
+  #main p {
+      float: left;
+      font-size: 2.7vw;
+      margin: 20px auto;
+      color: #000000;
+  }
+
+  #main .main_img {
+      float: left;
+      width: 300px;
+      height: 200px;
+      border: none;
+  }
+
+  #main .main_img>img {
+      width: 300px;
+      height: 200px;
+  }
+
+
+
+
+  /* 자기소개 */
+
+  #profile {
+      width: 100%;
+      float: left;
+  }
+
+  .in_profile {
+      /* width: 1500px */
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  .in_profile ul {
+      /* width: 1500px */
+      width: 100%;
+      margin: 0 auto;
+  }
+
+
+
+  #profile ul h2 {
+      font-size: 4.7vw;
+      text-align: center;
+  }
+
+  #profile ul li {
+      font-size: 2.7vw;
+      font-weight: bold;
+      padding: 15px 0;
+      text-align: center;
+  }
+
+  .in_profile2 {
+      /* width: 1500px */
+      width: 100%;
+      background-color: rgb(255, 140, 0);
+      font-size: 50px;
+      margin-top: 200px;
+      float: left;
+      border: 1px solid #ccc;
+      border-radius: 50px;
+      position: relative;
+      box-sizing: border-box;
+      display: none;
+  }
+
+  .in_profile2_L {
+      position: absolute;
+      left: 0;
+      overflow: hidden;
+  }
+
+  .in_profile2_R {
+      color: #fff;
+  }
+
+  .in_profile2>div {
+      height: 100px;
+      line-height: 100px;
+      border: 1px solid #000;
+      float: right;
+      border-radius: 50px;
+  }
+
+  .in_profile2>div:first-child:hover {
+      cursor: pointer;
+  }
+
+  /* 스킬 */
+  #skill {
+      width: 100%;
+      float: left;
+      background: none;
+  }
+
+  .in_skill {
+      width: 100%;
+      margin: 0 auto;
+      margin-top: none;
+      background: none;
+      display: flex;
+      justify-content: center;
+  }
+
+  .skill_img {
+      width: 100%;
+  }
+
+  .skill_img>h1 {
+      font-size: 4.5vw;
+      text-align: center;
+  }
+
+
+  .skill_img img {
+      width: 140px;
+      height: 140px;
+      border-radius: 150px;
+      padding: 20px;
+      float: left;
+  }
+
+  .skill_img h2 {
+      text-align: center;
+  }
+
+  .skill_text {
+      float: left;
+      width: 20vw;
+      height: 800px;
+      padding-top: 65px;
+      box-sizing: border-box;
+      display: none;
+  }
+
+  .skill_text h3 {
+      font-size: 2.5vw;
+      padding-top: 100px;
+  }
+
+  .skill_text h3:first-child {
+      padding-top: 0;
+  }
+
+  .skill_text li {
+      width: 20vw;
+      height: 30px;
+      background-color: #fff;
+  }
+
+
+
+  .box li {
+      border: 1px solid #000;
+      width: 5vw;
+      height: 50px;
+      float: left;
+      box-sizing: border-box;
+      background-color: rgb(0, 255, 4);
+  }
+
+  .box li:nth-child(3) {
+      background-color: #fff;
+  }
+
+  .box li:nth-child(4) {
+      background-color: #fff;
+  }
+
+
+  /* 프로젝트 */
+  #project_1 {
+      width: 100%;
+      float: left;
+
+  }
+
+  .in_project_1 {
+      /* width: 1500px; */
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+      z-index: 300;
+      background-color: #fff;
+      display: none;
+  }
+
+  /* -------- */
+
+  .in_project_2 {
+      /* width: 1500px; */
+      width: 50%;
+      margin: 0 auto;
+      padding-top: 150px;
+      box-sizing: border-box;
+      z-index: 300;
+      display: block;
+  }
+
+  .area2 {
+      /* 600 * 600 */
+      width: 400px;
+      height: 400px;
+      border: 1px solid #000;
+      box-sizing: border-box;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+  }
+
+  .area2>a {
+      display: inline-block;
+  }
+
+  .area2>h3 {
+      border-bottom: 1px solid #000;
+      box-sizing: border-box;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      position: relative;
+      background-color: #fff;
+  }
+
+  .btn_menu {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      width: 400px;
+      height: 400px;
+      z-index: 1;
+      pointer-events: none;
+  }
+
+  .prev2 {
+      position: absolute;
+      left: 5px;
+      top: 50%;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      z-index: 2;
+      pointer-events: auto;
+  }
+
+  .next2 {
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      z-index: 2;
+      pointer-events: auto;
+  }
+
+  /* 
+  .project_area1-2 {
+      opacity: 1;
+  }
+
+  .project_area2-2 {
+      opacity: 0;
+  }
+
+  .project_area3-2 {
+      opacity: 0;
+  } */

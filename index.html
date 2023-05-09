@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" media="screen and (max-width:1520px)" href="./css/main_1520.css">
+    <link rel="stylesheet" media="screen and (max-width:1300px)" href="./css/main_1300.css">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="./css/main_1000.css">
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="./css/main_800.css">
+    <title>이력서 홈페이지</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function () {
+            var menu = $('.nav > li');
+            var contents = $('#wrap > div');
+
+            $('.nav> li').click(function (event) {
+                event.preventDefault();
+
+                var i = $(this).index();
+
+                var section = $('#wrap > div ').eq(i);
+                var tt = section.offset().top;
+                var nav = 120;
+
+                $('html, body').stop().animate({ scrollTop: tt - nav });
+            });
+
+            $('.nav2> li').click(function (event) {
+                event.preventDefault();
+
+                var i = $(this).index();
+
+                var section = $('#wrap > div ').eq(i);
+                var tt = section.offset().top;
+                var nav = 120;
+
+                $('html, body').stop().animate({ scrollTop: tt - nav });
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 메인 -->
+        <div id="main">
+            <div class="header">
+                <span class="logo"><a href=""><img src="./images/귀칼이력서로고.png" alt="" width="220px"
+                            height="120px"></a></span>
+                <ul class="nav">
+                    <li><a href="#">main</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Front Skill</a></li>
+                    <li><a href="#">Project</a></li>
+                </ul>
+
+                <!-- Max-width: 1000px -->
+                <nav>
+                    <ul class="nav2">
+                        <li><a href="#">main</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Front Skill</a></li>
+                        <li><a href="#">Project</a></li>
+                    </ul>
+                    <div class="ham_btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+            <div class="in_main">
+                <div class="text_h">
+                    <h2>
+                        Hello, I'm Kim In Kook
+                    </h2>
+                    <ul>
+                        <li class="pr">Front-End Developer</li>
+                        <li class="dog">개처럼 일하자!</li>
+                        <li class="bark">work! work!</li>
+                    </ul>
+                    <div class="main_img"><img src="./images/텐겐.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <!-- Max-width: 1000px -->
+        <script>
+            $(document).ready(function () {
+                $("nav > .nav2").hide();
+                var i = $("nav > .nav2").index()
+                $("nav > .ham_btn").click(function () {
+                    var i = $('.nav2').index();
+                    var L = $('.ham_btn').eq(i)
+                    var ll = L.offset().left;
+                    $('nav > .nav2').hide();
+                    $('nav > .nav2')
+                        .eq(i)
+                        .show()
+                        .css({ opacity: '0', left: ll - 110 })
+                        .animate({ opacity: '1' })
+                });
+                $('nav ').mouseleave(function () {
+                    $('nav > .nav2').hide();
+                });
+
+            });
+        </script>
+        <!-- 소개 -->
+        <div id="profile">
+            <div class="in_profile">
+                <ul>
+                    <h2>Profile</h2>
+                    <br>
+                    <li>안녕하세요? 저는 프론트엔드 개발자 김인국입니다.</li>
+                    <li>웹 개발쪽이 처음이라 낮설고 어려움이 있지만 어려운 만큼 성취감도 크고<br>
+                        깊은 매력을 느끼며 항상 발전 하고있습니다.</li>
+                    <li>공부의 끝은 없다고 생각하고 제가 모르는 기술스택이 있어도 항상<br>
+                        배우는 자세로 공부하겠습니다.</li>
+                </ul>
+                <div class="in_profile2">
+                    <div class="in_profile2_L">
+                        <img src="./images/아카자.jpg" alt="" width="100px" height="100px">
+                    </div>
+                    <div class="in_profile2_R">
+                        <span><img src="./images/렌고쿠.png" alt="" width="100px" height="100px"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $('.in_profile2').hover(function () {
+                    // var i = $('.in_profile2_L').index();
+                    // var L = $('.in_profile2_R').eq(i)
+                    // var ll = L.offset().left;  // offset() 자기 자신의 좌표를 기준으로 찾아가는거임
+
+                    var pos = $('.in_profile2').width() - 100; // 부모요소에서 $('.in_profile2_L') 요소의 가로 값을 뺀것
+                    console.log(pos)
+                    $('.in_profile2_L').css({ left: 0 }).animate({ left: pos }, 5000);
+                    $('.in_profile2_R').animate({ opacity: 0 }, 5000);
+                });
+            });
+        </script>
+        <!-- 스킬 -->
+        <div id="skill">
+            <div class="in_skill">
+                <ul class="skill_img">
+                    <h2>Front Skill</h2>
+                    <li><img src="./images/html_img.PNG" alt="">
+                        <ul>
+                            <h3>HTML</h3>
+                            <li>저는 HTML의 기본 문법과 태그를 자유롭게 다룰 수 있으며, 모바일 최적화 웹 페이지, 반응형 웹 디자인, 웹 접근성 등 다양한 페이지를 만들 수 있습니다.
+                            </li>
+                        </ul>
+                    </li>
+                    <li><img src="./images/css_img.PNG" alt="">
+                        <ul>
+                            <h3>CSS</h3>
+                            <li>저는 다양한 CSS 속성과 선택자를 자유롭게 다룰 수 있으며, UI/UX 디자인을 고려한 웹 페이지, 모바일 최적화 웹 페이지, 반응형 웹 디자인을
+                                할 수 있습니다.</li>
+                        </ul>
+                    </li>
+                    <li><img src="./images/jQuery_img.PNG" alt="">
+                        <ul>
+                            <h3>jQuery</h3>
+                            <li>저는 jQuery로 스크롤 이벤트를 이용하여, 사용자가 웹 페이지를 스크롤할 때 동적인 기능을 구현할 수 있으며, 슬라이드 메뉴를 구현할 수 있습니다.
+                            </li>
+                        </ul>
+                    </li>
+                    <li><img src="./images/js_img.PNG" alt="">
+                        <ul>
+                            <h3>JS</h3>
+                            <li>JS를 이용하여 간단한 버튼 클릭 이벤트 기능을 구현할 수 있으며, 햄버거 버튼을 통해 풀 스크린 메뉴를 구현할 수 있습니다.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 프로젝트1 -->
+        <div id="project_1">
+            <div class="in_project_1">
+                <h2>Project</h2>
+                <div class="project_area1 area">
+                    <h3>클론코딩: HAZZYS (작업시간: 15시간)</h3>
+                    <a href="http://rladlsrnr1997.dothome.co.kr/" target="_blank"><img class="area_img"
+                            src="./images/hazzys.jpg" alt=""></a>
+                </div>
+                <div class="project_area2 area">
+                    <h3>클론코딩: HOME_GALLERY (작업시간: 10시간)</h3>
+                    <a href="http://rladlsrnr97.dothome.co.kr/" target="_blank"><img class="area_img"
+                            src="./images/homegall.PNG" alt=""></a>
+                </div>
+                <div class="project_area3 area">
+                    <h3>GitHub: 정리자료</h3>
+                    <a href="https://github.com/inkook97/project" target="_blank">
+                        <img class="area_img" src="./images/github-g8a791a888_1280.png" alt="">
+                    </a>
+                </div>
+                <button type="button" class="prev">&#60;</button>
+                <button type="button" class="next">&#62;</button>
+            </div>
+
+            <!-- Max-width: 1000px -->
+            <div class="in_project_2">
+                <h2>Project</h2>
+                <div class="project_area1-2 area2">
+                    <h3>클론코딩: HAZZYS (작업시간: 15시간)</h3>
+                    <a href="http://rladlsrnr1997.dothome.co.kr/" target="_blank"><img class="area_img"
+                            src="./images/hazzys.jpg" alt=""></a>
+                </div>
+                <div class="project_area2-2 area2">
+                    <h3>클론코딩: HOME_GALLERY (작업시간: 10시간)</h3>
+                    <a href="http://rladlsrnr97.dothome.co.kr/" target="_blank"><img class="area_img"
+                            src="./images/homegall.PNG" alt=""></a>
+                </div>
+                <div class="project_area3-2 area2">
+                    <h3>GitHub: 정리자료</h3>
+                    <a href="https://github.com/inkook97/project" target="_blank">
+                        <img class="area_img" src="./images/github-g8a791a888_1280.png" alt="">
+                    </a>
+                </div>
+                <div class="btn_menu">
+                    <button type="button" class="prev2">&#60;</button>
+                    <button type="button" class="next2">&#62;</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                var area = $('.area');
+                var i = 0;
+                var current; // i값을 고정시키기 위해서 선언함, 선언안하면 click이 계속 먹힘
+
+                $('.in_project_1 > .prev').click(function () {
+                    if (i > -1) {
+                        i = i - 1;
+
+                        area.animate({ left: "+=50%" });
+                        current = i;
+                    };
+                });
+
+
+                $('.in_project_1 > .next').click(function () {
+                    if (i < 1) {
+                        i = i + 1;
+
+                        area.animate({ left: "-=50%" });
+                        current = i;
+                    };
+                });
+            });
+        </script>
+
+        </head>
+
+        <!-- Max-width: 1000px -->
+        <script>
+            $(document).ready(function () {
+                $('.project_area2-2').hide();
+                $('.project_area3-2').hide();
+                var i = 0;
+
+                $('.prev2').click(function () {
+                    i -= 1;
+
+                    if (i < 0) {
+                        i = 2;
+                    };
+
+                    $('.project_area2-2').hide();
+                    $('.project_area3-2').hide();
+                    $('.project_area1-2').hide();
+
+                    if (i === 0) {
+                        $('.project_area1-2').show();
+                    } else if (i === 1) {
+                        $('.project_area2-2').show();
+                    } else if (i === 2) {
+                        $('.project_area3-2').show();
+                    };
+                });
+
+                $('.next2').click(function () {
+                    i += 1;
+
+                    if (i > 2) {
+                        i = 0;
+                    };
+
+                    $('.project_area2-2').hide();
+                    $('.project_area3-2').hide();
+                    $('.project_area1-2').hide();
+
+                    if (i === 0) {
+                        $('.project_area1-2').show();
+                    } else if (i === 1) {
+                        $('.project_area2-2').show();
+                    } else if (i === 2) {
+                        $('.project_area3-2').show();
+                    };
+                });
+            });
+        </script>
+
+    </div>
+</body>
+
+</html>
