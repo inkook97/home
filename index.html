@@ -229,84 +229,135 @@
                     <button type="button" class="next2">&#62;</button>
                 </div>
             </div>
+            <form id="form">
+                <div id="form_in">
+                    <div class="names">
+                        <div class="TO_name">
+                            <label>to_name</label><br />
+                            <input type="text" name="to_name" /><br /><br />
+                        </div>
+                        <div class="From_name">
+                            <label>from_name</label><br />
+                            <input type="text" name="from_name" /><br /><br />
+                        </div>
+                        <div class="Email">
+                            <label>Email</label><br />
+                            <input type="email" name="user_email" /><br /><br />
+                        </div>
+                    </div>
+                    <div class="Message">
+                        <label>Message</label><br />
+                        <textarea name="message"></textarea><br /><br /><br />
+                        <input type="submit" value="Send" id="button" />
+                    </div>
+                </div>
+            </form>
         </div>
-        <script>
-            $(document).ready(function () {
-                var area = $('.area');
-                var i = 0;
-                var current; // i값을 고정시키기 위해서 선언함, 선언안하면 click이 계속 먹힘
+    </div>
+    <!-- 이메일 -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('AGeWvwVg4GfME7SIz')
 
-                $('.in_project_1 > .prev').click(function () {
-                    if (i > -1) {
-                        i = i - 1;
+        const btn = document.getElementById('button');
 
-                        area.animate({ left: "+=50%" });
-                        current = i;
-                    };
+        document.getElementById('form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            btn.value = 'Sending...';
+
+            const serviceID = 'service_punjuy8';
+            const templateID = 'template_hda885d';
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    btn.value = 'Send Email';
+                    alert('메일보내기 성공');
+                }, (err) => {
+                    btn.value = 'Send Email';
+                    alert(JSON.stringify(err));
                 });
+        });
+    </script>
+    <!-- 이메일 끝 -->
 
+    <script>
+        $(document).ready(function () {
+            var area = $('.area');
+            var i = 0;
+            var current; // i값을 고정시키기 위해서 선언함, 선언안하면 click이 계속 먹힘
 
-                $('.in_project_1 > .next').click(function () {
-                    if (i < 1) {
-                        i = i + 1;
+            $('.in_project_1 > .prev').click(function () {
+                if (i > -1) {
+                    i = i - 1;
 
-                        area.animate({ left: "-=50%" });
-                        current = i;
-                    };
-                });
+                    area.animate({ left: "+=50%" });
+                    current = i;
+                };
             });
-        </script>
 
-        </head>
 
-        <!-- Max-width: 1000px -->
-        <script>
-            $(document).ready(function () {
+            $('.in_project_1 > .next').click(function () {
+                if (i < 1) {
+                    i = i + 1;
+
+                    area.animate({ left: "-=50%" });
+                    current = i;
+                };
+            });
+        });
+    </script>
+
+    </head>
+
+    <!-- Max-width: 1000px -->
+    <script>
+        $(document).ready(function () {
+            $('.project_area2-2').hide();
+            $('.project_area3-2').hide();
+            var i = 0;
+
+            $('.prev2').click(function () {
+                i -= 1;
+
+                if (i < 0) {
+                    i = 2;
+                };
+
                 $('.project_area2-2').hide();
                 $('.project_area3-2').hide();
-                var i = 0;
+                $('.project_area1-2').hide();
 
-                $('.prev2').click(function () {
-                    i -= 1;
-
-                    if (i < 0) {
-                        i = 2;
-                    };
-
-                    $('.project_area2-2').hide();
-                    $('.project_area3-2').hide();
-                    $('.project_area1-2').hide();
-
-                    if (i === 0) {
-                        $('.project_area1-2').show();
-                    } else if (i === 1) {
-                        $('.project_area2-2').show();
-                    } else if (i === 2) {
-                        $('.project_area3-2').show();
-                    };
-                });
-
-                $('.next2').click(function () {
-                    i += 1;
-
-                    if (i > 2) {
-                        i = 0;
-                    };
-
-                    $('.project_area2-2').hide();
-                    $('.project_area3-2').hide();
-                    $('.project_area1-2').hide();
-
-                    if (i === 0) {
-                        $('.project_area1-2').show();
-                    } else if (i === 1) {
-                        $('.project_area2-2').show();
-                    } else if (i === 2) {
-                        $('.project_area3-2').show();
-                    };
-                });
+                if (i === 0) {
+                    $('.project_area1-2').show();
+                } else if (i === 1) {
+                    $('.project_area2-2').show();
+                } else if (i === 2) {
+                    $('.project_area3-2').show();
+                };
             });
-        </script>
+
+            $('.next2').click(function () {
+                i += 1;
+
+                if (i > 2) {
+                    i = 0;
+                };
+
+                $('.project_area2-2').hide();
+                $('.project_area3-2').hide();
+                $('.project_area1-2').hide();
+
+                if (i === 0) {
+                    $('.project_area1-2').show();
+                } else if (i === 1) {
+                    $('.project_area2-2').show();
+                } else if (i === 2) {
+                    $('.project_area3-2').show();
+                };
+            });
+        });
+    </script>
 
     </div>
 </body>

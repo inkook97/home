@@ -371,3 +371,72 @@
   .in_project_2 {
       display: none;
   }
+
+
+  #form {
+      width: 100%;
+  }
+
+  #form_in {
+      width: 1500px;
+      height: 1000px;
+      margin: 0 auto;
+  }
+
+  .names {
+      width: 600px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .TO_name {
+      float: left;
+  }
+
+  .TO_name>input {
+      height: 50px;
+  }
+
+  .From_name {
+      float: left;
+  }
+
+  .From_name>input {
+      height: 50px;
+  }
+
+  .Email {
+      float: left;
+  }
+
+  .Email>input {
+      height: 50px;
+  }
+
+  .Message {
+      width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+
+  .Message>textarea {
+      height: 300px;
+      width: 500px;
+  }
+
+  #button {
+      width: 200px;
+      height: 302px;
+      background-color: rgb(188, 184, 184);
+      color: #fff;
+      font-size: 30px;
+  }
+
+
+  .mail {
+      height: 50px;
+  }
