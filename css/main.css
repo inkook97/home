@@ -383,6 +383,10 @@
       margin: 0 auto;
   }
 
+  label {
+      font-size: 30px;
+  }
+
   .names {
       width: 600px;
       margin: 0 auto;
