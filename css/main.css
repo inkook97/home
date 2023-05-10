@@ -31,6 +31,7 @@
       height: 100vh;
   }
 
+
   /* 메인 */
 
 
@@ -111,7 +112,7 @@
   #main h2 {
       float: right;
       width: 100%;
-      margin: 300px 0 0 0;
+      margin: 150px 0 0 0;
       font-size: 60px;
       text-align: right;
       padding-right: 100px;
@@ -155,6 +156,7 @@
   .main_img>img {
       width: 800px;
       height: 600px;
+      float: left;
   }
 
 
@@ -168,6 +170,7 @@
   .in_profile {
       width: 1500px;
       margin: 0 auto;
+      margin-top: 150px;
   }
 
 
@@ -176,18 +179,24 @@
       font-size: 60px;
   }
 
+  #profile ul {
+      float: left;
+      display: inline-block;
+  }
+
   #profile ul li {
-      font-size: 30px;
+      font-size: 25px;
       font-weight: bold;
       padding: 15px 0;
+
   }
 
   .in_profile2 {
       width: 1500px;
       background-color: #d1d1d1;
       font-size: 50px;
-      margin-top: 200px;
       float: left;
+      margin-top: 50px;
       border: 1px solid #ccc;
       border-radius: 50px;
       position: relative;
@@ -240,6 +249,7 @@
       align-items: flex-start;
       font-size: 25px;
       color: #7b5e5e;
+      width: 80%;
   }
 
   .skill_img h3 {
@@ -267,6 +277,7 @@
   #project_1 {
       width: 100%;
       float: left;
+      margin-top: 300px;
   }
 
   .in_project_1 {
@@ -375,13 +386,29 @@
 
   #form {
       width: 100%;
+      margin-top: 200px;
   }
+
 
   #form_in {
       width: 1500px;
       height: 1000px;
       margin: 0 auto;
   }
+
+  #form_in>h2 {
+      font-size: 60px;
+      text-align: center;
+  }
+
+  .form_img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      box-sizing: border-box;
+  }
+
 
   label {
       font-size: 20px;
