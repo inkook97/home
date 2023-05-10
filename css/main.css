@@ -432,6 +432,8 @@
   .Message>textarea {
       height: 300px;
       width: 500px;
+      padding: 5px;
+      box-sizing: border-box;
   }
 
   #button {
