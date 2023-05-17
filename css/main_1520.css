@@ -1,335 +1,427 @@
-  * {
-      margin: 0;
-      padding: 0;
-  }
+* {
+    margin: 0;
+    padding: 0;
+}
 
 
-  ul,
-  li {
-      list-style: none;
-  }
+ul,
+li {
+    list-style: none;
+}
 
-  a {
-      text-decoration: none;
-  }
+a {
+    text-decoration: none;
+}
 
-  #wrap {
-      width: 100%;
-  }
-
-
-  #wrap>div {
-      width: 100%;
-      height: 100vh;
-  }
+#wrap {
+    width: 100%;
+}
 
 
-  #wrap>div>div {
-      height: 100vh;
-  }
-
-  /* 메인 */
-
-
-  #main {
-      width: 100%;
-      float: left;
-  }
-
-  .in_main {
-      /* width: 1500px; */
-      width: 100%;
-      margin: 0 auto;
-  }
+#wrap>div {
+    width: 100%;
+    height: 100vh;
+}
 
 
-  .in_main>.text_h {
-      /* width: 1500px; */
-      width: 98.6%;
-      margin: 0 auto;
-  }
+#wrap>div>div {
+    height: 100vh;
+}
 
-  #main .header {
-      width: 100%;
-      height: 120px;
-      box-sizing: border-box;
-      position: fixed;
-      z-index: 9999;
-  }
+/* 메인 */
 
 
-  #main .logo {
-      width: 120px;
-      height: 120px;
-      position: fixed;
-      left: 10%;
-  }
+#main {
+    width: 100%;
+    float: left;
+}
 
-  #main .logo img {
-      padding-top: 20px;
-      box-sizing: border-box;
-  }
-
-
-  #main .nav {
-      position: fixed;
-      left: 50%;
-      margin: 50px 0 0 0;
-  }
-
-  #main .nav li {
-      float: left;
-      margin-right: 90px;
-  }
-
-  #main .nav a {
-      font-size: 20px;
-      font-weight: 600;
-      color: #fff;
-  }
-
-  #main .nav a:hover {
-      border-bottom: 4px solid #fff;
-      border-radius: 3px;
-      font-size: 1.64vw;
-  }
-
-  #main .nav li.on a {
-      color: #000;
-  }
-
-  #main h2 {
-      float: left;
-      width: 100%;
-      margin: 300px 0 0 0;
-      font-size: 3.28vw;
-      text-align: right;
-      padding-right: 100px;
-      box-sizing: border-box;
-  }
-
-  #main p {
-      float: right;
-      margin: 20px 100px 0 0;
-      font-size: 16px;
-      color: #000000;
-  }
-
-  #main .main_img {
-      float: left;
-      width: 600px;
-      height: 400px;
-      border: none;
-  }
-
-  .main_img>img {
-      width: 800px;
-      height: 600px;
-  }
+.in_main {
+    /* width: 1500px; */
+    width: 100%;
+    margin: 0 auto;
+}
 
 
-  /* 자기소개 */
+.in_main>.text_h {
+    /* width: 1500px; */
+    width: 98.6%;
+    margin: 0 auto;
+}
 
-  #profile {
-      width: 100%;
-      float: left;
-  }
-
-  .in_profile {
-      /* width: 1500px */
-      width: 100%;
-      margin: 0 0;
-  }
-
-
-
-  #profile ul h2 {
-      font-size: 3.28vw;
-  }
-
-  #profile ul li {
-      font-size: 1.97vw;
-      font-weight: bold;
-      padding: 15px 0;
-  }
-
-  .in_profile2 {
-      /* width: 1500px */
-      width: 100%;
-      background-color: #d1d1d1;
-      font-size: 50px;
-      margin-top: 200px;
-      float: left;
-      border: 1px solid #ccc;
-      border-radius: 50px;
-      position: relative;
-      box-sizing: border-box;
-  }
-
-  .in_profile2_L {
-      position: absolute;
-      left: 0;
-      overflow: hidden;
-  }
-
-  .in_profile2_R {
-      color: #fff;
-  }
-
-  .in_profile2>div {
-      height: 100px;
-      line-height: 100px;
-      float: right;
-      border-radius: 50px;
-  }
-
-  .in_profile2>div:first-child:hover {
-      cursor: pointer;
-  }
-
-  /* 스킬 */
-  #skill {
-      width: 100%;
-      float: left;
-  }
-
-  .in_skill {
-      width: 1500px;
-      margin: 0 auto;
-      margin-top: 50px;
-  }
-
-  .skill_img {
-      float: left;
-      width: 100%;
-  }
-
-  .skill_img li {
-      display: flex;
-      align-items: flex-start;
-      font-size: 1.64vw;
-      width: 70%;
-  }
+#main .header {
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 9999;
+}
 
 
-  .skill_img>h2 {
-      font-size: 3.28vw;
-      padding-bottom: 25px;
-      box-sizing: border-box;
-  }
+#main .logo {
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    left: 10%;
+}
 
-  .skill_img h3 {
-      font-size: 3vw;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      box-sizing: border-box;
-  }
-
-  .skill_img img {
-      width: 140px;
-      height: 140px;
-      border-radius: 150px;
-      padding: 20px;
-  }
-
-  /* 프로젝트 */
-  #project_1 {
-      width: 100%;
-      float: left;
-  }
-
-  .in_project_1 {
-      /* width: 1500px; */
-      width: 100%;
-      margin: 0 auto;
-      position: relative;
-      overflow: hidden;
-      z-index: 300;
-  }
-
-  .in_project_1>h2 {
-      font-size: 3.28vw;
-      text-align: center;
-      margin-top: 50px;
-  }
-
-  .area {
-      overflow: hidden;
-  }
-
-  .area_img {
-      width: 500px;
-      height: 451px;
-  }
-
-  .project_area1 {
-      /* 600 * 600 */
-      width: 500px;
-      height: 500px;
-      border: 1px solid #000;
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translate(-50%, -50%);
-  }
-
-  .project_area1>h3 {
-      border-bottom: 1px solid #000;
-      height: 50px;
-      line-height: 50px;
-      text-align: center;
-  }
+#main .logo img {
+    padding-top: 20px;
+    box-sizing: border-box;
+}
 
 
-  .project_area2 {
-      width: 500px;
-      height: 500px;
-      border: 1px solid #000;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-  }
+#main .nav {
+    position: fixed;
+    left: 50%;
+    margin: 50px 0 0 0;
+}
 
-  .project_area2>h3 {
-      border-bottom: 1px solid #000;
-      height: 50px;
-      line-height: 50px;
-      text-align: center;
-  }
+#main .nav li {
+    float: left;
+    margin-right: 90px;
+}
 
-  .project_area3 {
-      width: 500px;
-      height: 500px;
-      border: 1px solid #000;
-      position: absolute;
-      left: 100%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-  }
+#main .nav a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
 
-  .project_area3>h3 {
-      border-bottom: 1px solid #000;
-      height: 50px;
-      line-height: 50px;
-      text-align: center;
-  }
+#main .nav a:hover {
+    border-bottom: 4px solid #fff;
+    border-radius: 3px;
+    font-size: 1.64vw;
+}
 
-  .in_project_1>button {
-      /* 100 * 100 */
-      width: 6.57vw;
-      height: 6.57vw;
-      border: none;
-      border-radius: 100px;
-      position: absolute;
-      left: 25%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 0.6;
-      /* 20 */
-      font-size: 1.31vw;
-  }
+#main .nav li.on a {
+    color: #000;
+}
 
-  .in_project_1>button:last-child {
-      left: 75%;
-  }
+#main h2 {
+    float: left;
+    width: 100%;
+    margin: 300px 0 0 0;
+    font-size: 3.28vw;
+    text-align: right;
+    padding-right: 100px;
+    box-sizing: border-box;
+}
+
+#main p {
+    float: right;
+    margin: 20px 100px 0 0;
+    font-size: 16px;
+    color: #000000;
+}
+
+#main .main_img {
+    float: left;
+    width: 600px;
+    height: 400px;
+    border: none;
+}
+
+.main_img>img {
+    width: 800px;
+    height: 600px;
+}
+
+
+/* 자기소개 */
+
+#profile {
+    width: 100%;
+    float: left;
+}
+
+.in_profile {
+    /* width: 1500px */
+    width: 100%;
+    margin: 0 0;
+}
+
+
+
+#profile ul h2 {
+    font-size: 3.28vw;
+}
+
+#profile ul li {
+    font-size: 1.97vw;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+.in_profile2 {
+    /* width: 1500px */
+    width: 100%;
+    background-color: #d1d1d1;
+    font-size: 50px;
+    margin-top: 200px;
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.in_profile2_L {
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+}
+
+.in_profile2_R {
+    color: #fff;
+}
+
+.in_profile2>div {
+    height: 100px;
+    line-height: 100px;
+    float: right;
+    border-radius: 50px;
+}
+
+.in_profile2>div:first-child:hover {
+    cursor: pointer;
+}
+
+/* 스킬 */
+#skill {
+    width: 100%;
+    float: left;
+}
+
+.in_skill {
+    width: 1500px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.skill_img {
+    float: left;
+    width: 100%;
+}
+
+.skill_img li {
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.64vw;
+    width: 70%;
+}
+
+
+.skill_img>h2 {
+    font-size: 3.28vw;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+}
+
+.skill_img h3 {
+    font-size: 3vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.skill_img img {
+    width: 140px;
+    height: 140px;
+    border-radius: 150px;
+    padding: 20px;
+}
+
+/* 프로젝트 */
+#project_1 {
+    width: 100%;
+    float: left;
+}
+
+.in_project_1 {
+    /* width: 1500px; */
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 300;
+}
+
+.in_project_1>h2 {
+    font-size: 3.28vw;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.area {
+    overflow: hidden;
+}
+
+.area_img {
+    width: 500px;
+    height: 451px;
+}
+
+.project_area1 {
+    /* 600 * 600 */
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project_area1>h3 {
+    border-bottom: 1px solid #000;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+.project_area2 {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project_area2>h3 {
+    border-bottom: 1px solid #000;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.project_area3 {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project_area3>h3 {
+    border-bottom: 1px solid #000;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.in_project_1>button {
+    /* 100 * 100 */
+    width: 6.57vw;
+    height: 6.57vw;
+    border: none;
+    border-radius: 100px;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+    /* 20 */
+    font-size: 1.31vw;
+}
+
+.in_project_1>button:last-child {
+    left: 75%;
+}
+
+#form {
+    width: 100%;
+    margin-top: 200px;
+}
+
+
+#form_in {
+    width: 100%;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+#form_in>h2 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.form_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+label {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: '휴먼고딕';
+}
+
+.names {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.TO_name {
+    float: left;
+}
+
+.TO_name>input {
+    height: 50px;
+}
+
+.From_name {
+    float: left;
+}
+
+.From_name>input {
+    height: 50px;
+}
+
+.Email {
+    float: left;
+}
+
+.Email>input {
+    height: 50px;
+}
+
+.Message {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Message>textarea {
+    height: 300px;
+    width: 500px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#button {
+    width: 200px;
+    height: 302px;
+    background-color: rgb(188, 184, 184);
+    color: #fff;
+    font-size: 30px;
+}
+
+
+.mail {
+    height: 50px;
+}
