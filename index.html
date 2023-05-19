@@ -198,6 +198,12 @@
                             src="./images/homegall.PNG" alt=""></a>
                 </div>
                 <div class="project_area3 area">
+                    <h3>리액트: 남양몰 (수업시간에 같이 작업)</h3>
+                    <a href="https://0518.netlify.app" target="_blank">
+                        <img class="area_img" src="./images/남양.PNG" alt="">
+                    </a>
+                </div>
+                <div class="project_area4 area">
                     <h3>GitHub: 정리자료</h3>
                     <a href="https://github.com/inkook97/project" target="_blank">
                         <img class="area_img" src="./images/github-g8a791a888_1280.png" alt="">
@@ -221,6 +227,12 @@
                             src="./images/homegall.PNG" alt=""></a>
                 </div>
                 <div class="project_area3-2 area2">
+                    <h3>리액트: 남양몰 (수업시간에 같이 작업)</h3>
+                    <a href="https://0518.netlify.app" target="_blank">
+                        <img class="area_img" src="./images/남양.PNG" alt="">
+                    </a>
+                </div>
+                <div class="project_area4-2 area2">
                     <h3>GitHub: 정리자료</h3>
                     <a href="https://github.com/inkook97/project" target="_blank">
                         <img class="area_img" src="./images/github-g8a791a888_1280.png" alt="">
@@ -305,7 +317,7 @@
 
 
             $('.in_project_1 > .next').click(function () {
-                if (i < 1) {
+                if (i < 2) {
                     i = i + 1;
 
                     area.animate({ left: "-=50%" });
@@ -322,17 +334,19 @@
         $(document).ready(function () {
             $('.project_area2-2').hide();
             $('.project_area3-2').hide();
+            $('.project_area4-2').hide();
             var i = 0;
 
             $('.prev2').click(function () {
                 i -= 1;
 
                 if (i < 0) {
-                    i = 2;
+                    i = 3;
                 };
 
                 $('.project_area2-2').hide();
                 $('.project_area3-2').hide();
+                $('.project_area4-2').hide();
                 $('.project_area1-2').hide();
 
                 if (i === 0) {
@@ -341,18 +355,21 @@
                     $('.project_area2-2').show();
                 } else if (i === 2) {
                     $('.project_area3-2').show();
+                } else if (i === 3) {
+                    $('.project_area4-2').show();
                 };
             });
 
             $('.next2').click(function () {
                 i += 1;
 
-                if (i > 2) {
+                if (i > 3) {
                     i = 0;
                 };
 
                 $('.project_area2-2').hide();
                 $('.project_area3-2').hide();
+                $('.project_area4-2').hide();
                 $('.project_area1-2').hide();
 
                 if (i === 0) {
@@ -361,11 +378,12 @@
                     $('.project_area2-2').show();
                 } else if (i === 2) {
                     $('.project_area3-2').show();
+                } else if (i === 3) {
+                    $('.project_area4-2').show();
                 };
             });
         });
     </script>
-
     </div>
 </body>
 

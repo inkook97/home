@@ -361,6 +361,24 @@
       text-align: center;
   }
 
+  .project_area4 {
+      width: 600px;
+      height: 600px;
+      border: 1px solid #000;
+      position: absolute;
+      left: 150%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 3%;
+  }
+
+  .project_area4>h3 {
+      border-bottom: 1px solid #000;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+  }
+
   .in_project_1>button {
       width: 100px;
       height: 100px;
